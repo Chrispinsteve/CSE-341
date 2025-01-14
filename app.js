@@ -21,8 +21,8 @@ app.get('/contacts', (req, res) => {
 // Route to retrieve a contact by ID
 app.get('/contacts/:id', (req, res) => {
     const contacts = [
-        { id: 1, name: "John Doe", email: "chr23052@byui.edu" },
-        { id: 2, name: "Jane Smith", email: "valerie03@gmail.com" },
+        { id: 1, name: "Steve Chrispin", email: "chr23052@byui.edu" },
+        { id: 2, name: "Valerie Levassort", email: "valerie03@gmail.com" },
     ];
     const contact = contacts.find(c => c.id === parseInt(req.params.id));
     if (contact) {
@@ -36,6 +36,6 @@ app.get('/contacts/:id', (req, res) => {
 const port = 3000;
 
 app.listen(process.env.PORT || port, () => {
-    console.log('Web Server is listening at port ' + (process.env.PORT || 3000))
+    console.log(`Web Server is listening at port on http://localhost:${port}` + (process.env.PORT || 3000))
 });
 

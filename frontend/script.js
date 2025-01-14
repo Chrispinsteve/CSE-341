@@ -1,6 +1,6 @@
 // helpful link for converting image to base64: https://elmah.io/tools/base64-image-encoder/
 async function apiFetch(url) {
-  const response = await fetch(url);
+  const response = await fetch('http://localhost:3000/contacts');
   const data = await response.json();
   return data;
 }
