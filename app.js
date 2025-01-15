@@ -13,7 +13,7 @@ app.use(express.json());
 // Route to retrieve all contacts
 app.get('/contacts', (req, res) => {
     res.json([
-        { id: 1, name: "Steve Chrispin", email: "chr23052@byui.edu" },
+        { id: 1, name: "Steve Chrispin", email: "chqwd2@byui.edu" },
         { id: 2, name: "Valerie Levassort", email: "valerie03@gmail.com"},
     ]);
 });
@@ -21,7 +21,7 @@ app.get('/contacts', (req, res) => {
 // Route to retrieve a contact by ID
 app.get('/contacts/:id', (req, res) => {
     const contacts = [
-        { id: 1, name: "Steve Chrispin", email: "chr23052@byui.edu" },
+        { id: 1, name: "Steve Chrispin", email: "chqwd2@byui.edu" },
         { id: 2, name: "Valerie Levassort", email: "valerie03@gmail.com" },
     ];
     const contact = contacts.find(c => c.id === parseInt(req.params.id));
